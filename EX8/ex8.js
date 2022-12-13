@@ -1,13 +1,8 @@
-
-g=1
 function testvalue(i, minNumb, maxNumb,randNumb){
 
     numb=prompt(`Please enter your number -try ${9-i}/8- :`)
    
     var i,minNumb,maxNumb,randNumb; 
-    console.log(randNumb)
-    console.log(minNumb)
-    console.log(maxNumb)
     if(numb<randNumb&&numb>minNumb && i>0){
         let minNumb=numb;
         i-=1
@@ -30,7 +25,7 @@ function testvalue(i, minNumb, maxNumb,randNumb){
         alert("Nice try and good luck next time")
     }
     else if(numb==randNumb){
-        alert(`Hurray, Good Job Did it with ${8-i}`)
+        alert(`Hurray, Good Job You Did it with ${8-i} tries!`)
     }
 }
 document.getElementById("start").onclick=()=>{
