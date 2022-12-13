@@ -2,7 +2,7 @@ document.getElementById("calc").onclick=()=>{
     primeArray=[]
     const numb1 = parseInt(document.getElementById("numb1").value);
     const numb2 = parseInt(document.getElementById("numb2").value);
-    console.log(`The prime numbers between ${numb1} and ${numb2} are:`);
+    console.log();
 if(numb1>numb2){
     alert("The second number should be higher than the first number!")
 }
@@ -19,6 +19,6 @@ else{
             primeArray.push(i);
         }
     }
-    alert(primeArray)
+    alert(`The prime numbers between ${numb1} and ${numb2} are:\n`+primeArray)
     }
 }
